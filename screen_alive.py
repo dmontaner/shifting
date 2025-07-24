@@ -1,3 +1,4 @@
+import sys
 import time
 import pyautogui
 
@@ -10,7 +11,7 @@ def shifting(seconds=60, verbose=False):
     while True:
         pyautogui.press("shift")
         if verbose:
-            print(f"shifting version: {__version__}")
+            print(f"shifting version: {__version__} | python version: {sys.executable} {sys.version}")
         time.sleep(seconds)
 
 
